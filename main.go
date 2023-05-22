@@ -1,7 +1,7 @@
 package main
 
 import (
-	bindingdemos "hi-supergirl/go-learning-gin/bindingDemos"
+	validationdemo "hi-supergirl/go-learning-gin/validationDemo"
 )
 
 func main() {
@@ -9,5 +9,7 @@ func main() {
 	//logger.EnabledColor()
 	//logger.SetCustomerLogger()
 	//middlewaredemo.AddFirstCustomMiddleWare()
-	bindingdemos.TestBindingViaFormAndJson()
+	//bindingdemos.TestBindingViaFormAndJson()
+	validationdemo.SimpleValidator()
+
 }
