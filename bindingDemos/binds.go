@@ -15,12 +15,18 @@ type Person struct {
 func bindPerson(c *gin.Context) {
 	var person Person
 	if c.Bind(&person) == nil {
-		log.Println("binding by query")
+		log.Println("binding by Bind")
+		log.Println("person.name=", person.Name)
+		log.Println("person.address=", person.Address)
+	}
+	// similar to c.Bind
+	if c.BindQuery(&person) == nil {
+		log.Println("binding by BindQuery")
 		log.Println("person.name=", person.Name)
 		log.Println("person.address=", person.Address)
 	}
 	if c.BindJSON(&person) == nil {
-		log.Println("binding by json")
+		log.Println("binding by BindJSON")
 		log.Println("person.name=", person.Name)
 		log.Println("person.address=", person.Address)
 	}

@@ -12,7 +12,7 @@ func Logger() gin.HandlerFunc {
 		t := time.Now()
 		c.Set("example", "123456")
 
-		c.Next()
+		c.Next() // important!!!!
 		latency := time.Since(t)
 		log.Println(latency)
 	}
