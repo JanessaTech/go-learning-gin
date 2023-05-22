@@ -1,8 +1,9 @@
 package main
 
-import logcolor "hi-supergirl/go-learning-gin/logColor"
+import "hi-supergirl/go-learning-gin/logger"
 
 func main() {
-	logcolor.DisabledColor()
-	//logcolor.EnabledColor()
+	//logger.DisabledColor()
+	//logger.EnabledColor()
+	logger.SetCustomerLogger()
 }

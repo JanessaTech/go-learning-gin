@@ -1,4 +1,4 @@
-package logcolor
+package logger
 
 import "github.com/gin-gonic/gin"
 
