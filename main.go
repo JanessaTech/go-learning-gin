@@ -1,12 +1,13 @@
 package main
 
 import (
-	middlewaredemo "hi-supergirl/go-learning-gin/MiddlewareDemo"
+	bindingdemos "hi-supergirl/go-learning-gin/bindingDemos"
 )
 
 func main() {
 	//logger.DisabledColor()
 	//logger.EnabledColor()
 	//logger.SetCustomerLogger()
-	middlewaredemo.AddFirstCustomMiddleWare()
+	//middlewaredemo.AddFirstCustomMiddleWare()
+	bindingdemos.TestBindingViaFormAndJson()
 }
