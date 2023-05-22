@@ -1,9 +1,12 @@
 package main
 
-import "hi-supergirl/go-learning-gin/logger"
+import (
+	middlewaredemo "hi-supergirl/go-learning-gin/MiddlewareDemo"
+)
 
 func main() {
 	//logger.DisabledColor()
 	//logger.EnabledColor()
-	logger.SetCustomerLogger()
+	//logger.SetCustomerLogger()
+	middlewaredemo.AddFirstCustomMiddleWare()
 }
