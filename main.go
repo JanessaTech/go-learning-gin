@@ -1,7 +1,7 @@
 package main
 
 import (
-	designreponse "hi-supergirl/go-learning-gin/designReponse"
+	middlewaredemo "hi-supergirl/go-learning-gin/MiddlewareDemo"
 )
 
 func main() {
@@ -11,5 +11,6 @@ func main() {
 	//middlewaredemo.AddFirstCustomMiddleWare()
 	//bindingdemos.TestBindingViaFormAndJson()
 	//validationdemo.SimpleValidator()
-	designreponse.Demo()
+	//designreponse.Demo()
+	middlewaredemo.AddMultipleMiddlewares()
 }
