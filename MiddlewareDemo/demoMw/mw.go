@@ -30,10 +30,11 @@ func ThirdMW() gin.HandlerFunc {
 	}
 }
 
-func ForthMW() gin.HandlerFunc {
+func SetPanic() gin.HandlerFunc {
 	return func(c *gin.Context) {
-		fmt.Println("enter forth middleware...")
+		fmt.Println("enter SetPanic middleware...")
 		c.Next()
-		fmt.Println("exist forth middleware...")
+		fmt.Println("exist SetPanic middleware...")
+		panic("a problem")
 	}
 }

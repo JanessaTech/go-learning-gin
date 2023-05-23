@@ -12,5 +12,6 @@ func main() {
 	//bindingdemos.TestBindingViaFormAndJson()
 	//validationdemo.SimpleValidator()
 	//designreponse.Demo()
-	middlewaredemo.AddMultipleMiddlewares()
+	//middlewaredemo.AddMultipleMiddlewares()
+	middlewaredemo.GinRecoveryDemo()
 }
