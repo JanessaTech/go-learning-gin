@@ -9,9 +9,10 @@ func main() {
 	//logger.EnabledColor()
 	//logger.SetCustomerLogger()
 	//middlewaredemo.AddFirstCustomMiddleWare()
+	middlewaredemo.PropogateVariableViaMWDmo()
 	//bindingdemos.TestBindingViaFormAndJson()
 	//validationdemo.SimpleValidator()
 	//designreponse.Demo()
 	//middlewaredemo.AddMultipleMiddlewares()
-	middlewaredemo.GinRecoveryDemo()
+	//middlewaredemo.GinRecoveryDemo()
 }
