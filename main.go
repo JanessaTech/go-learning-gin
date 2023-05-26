@@ -1,18 +1,23 @@
 package main
 
 import (
-	middlewaredemo "hi-supergirl/go-learning-gin/MiddlewareDemo"
+	"hi-supergirl/go-learning-gin/deadline"
 )
 
 func main() {
 	//logger.DisabledColor()
 	//logger.EnabledColor()
 	//logger.SetCustomerLogger()
+
 	//middlewaredemo.AddFirstCustomMiddleWare()
-	middlewaredemo.PropogateVariableViaMWDmo()
+	//middlewaredemo.PropogateVariableViaMWDmo()
+	//middlewaredemo.AddMultipleMiddlewares()
+	//middlewaredemo.GinRecoveryDemo()
+
 	//bindingdemos.TestBindingViaFormAndJson()
 	//validationdemo.SimpleValidator()
 	//designreponse.Demo()
-	//middlewaredemo.AddMultipleMiddlewares()
-	//middlewaredemo.GinRecoveryDemo()
+
+	deadline.Main()
+
 }
