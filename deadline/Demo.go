@@ -37,10 +37,10 @@ func doTask() string {
 }
 
 func testFunc(c *gin.Context) {
-	fmt.Println(time.Now(), "Get started with task..")
+	fmt.Println(time.Now().Format(time.UnixDate), "Get started with task..")
 	ctx := c.Request.Context()
 	if deadlineTime, ok := ctx.Deadline(); ok {
-		fmt.Println("deadlineTime = ", deadlineTime)
+		fmt.Println("deadlineTime = ", deadlineTime.Format(time.UnixDate))
 		doneChan := make(chan string)
 
 		// start a go routine to execute the task
@@ -55,7 +55,7 @@ func testFunc(c *gin.Context) {
 			err := ctx.Err()
 			fmt.Println("task isn't finished due to:", err)
 		case res := <-doneChan:
-			fmt.Println(time.Now(), res)
+			fmt.Println(time.Now().Format(time.UnixDate), res)
 		}
 	}
 }
