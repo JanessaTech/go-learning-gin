@@ -18,7 +18,7 @@ func setDeadlineMw() gin.HandlerFunc {
 		c.Request = c.Request.WithContext(newCtx)
 
 		c.Next()
-		cancel()
+
 		fmt.Println("leave setDeadlineMw ...")
 	}
 }
