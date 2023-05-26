@@ -1,9 +1,5 @@
 package main
 
-import (
-	"hi-supergirl/go-learning-gin/deadline"
-)
-
 func main() {
 	//logger.DisabledColor()
 	//logger.EnabledColor()
@@ -18,6 +14,9 @@ func main() {
 	//validationdemo.SimpleValidator()
 	//designreponse.Demo()
 
-	deadline.Main()
+	//deadline.Main()
+
+	// I think this solution is not applicable
+	//loginlogout.LoginLogoutWithSessionDemo()
 
 }
