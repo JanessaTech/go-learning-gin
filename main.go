@@ -1,5 +1,7 @@
 package main
 
+import jwtdemo "hi-supergirl/go-learning-gin/loginlogout/jwtDemo"
+
 func main() {
 	//logger.DisabledColor()
 	//logger.EnabledColor()
@@ -18,5 +20,7 @@ func main() {
 
 	// I think this solution is not applicable
 	//loginlogout.LoginLogoutWithSessionDemo()
+
+	jwtdemo.StartHttPServer()
 
 }
