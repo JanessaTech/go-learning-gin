@@ -36,6 +36,23 @@ func AddMultipleMiddlewares() {
 	r.Run(":8080")
 }
 
+// http://127.0.0.1:8080/v1/api/admin/first
+// http://127.0.0.1:8080/v1/api/admin/second
+func AddMultipleMiddlewares1() {
+	r := gin.Default()
+	v1 := r.Group("/v1/api")
+	{
+		admin := v1.Group("/admin")
+		// ther mw defined in r will work
+		admin.Use(demomw.FirstMW())
+		admin.Use()
+		admin.GET("/first", adminFuncNoMw)      // first mw is called
+		admin.Use(demomw.SecondMW())            // both mw defined in r and mw defined here will work
+		admin.GET("/second", adminFuncSecondMw) // first and second mw are called
+	}
+	r.Run(":8080")
+}
+
 func adminFuncNoMw(c *gin.Context) {
 	fmt.Println("adminFuncNoMw ...")
 	c.String(200, "adminFuncNoMw")

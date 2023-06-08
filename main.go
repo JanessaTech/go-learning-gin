@@ -1,6 +1,8 @@
 package main
 
-import jwtdemo "hi-supergirl/go-learning-gin/loginlogout/jwtDemo"
+import (
+	middlewaredemo "hi-supergirl/go-learning-gin/MiddlewareDemo"
+)
 
 func main() {
 	//logger.DisabledColor()
@@ -10,6 +12,7 @@ func main() {
 	//middlewaredemo.AddFirstCustomMiddleWare()
 	//middlewaredemo.PropogateVariableViaMWDmo()
 	//middlewaredemo.AddMultipleMiddlewares()
+	middlewaredemo.AddMultipleMiddlewares1()
 	//middlewaredemo.GinRecoveryDemo()
 
 	//bindingdemos.TestBindingViaFormAndJson()
@@ -21,6 +24,6 @@ func main() {
 	// I think this solution is not applicable
 	//loginlogout.LoginLogoutWithSessionDemo()
 
-	jwtdemo.StartHttPServer()
+	//jwtdemo.StartHttPServer()
 
 }
